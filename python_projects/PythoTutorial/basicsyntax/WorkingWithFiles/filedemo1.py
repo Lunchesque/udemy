@@ -6,7 +6,7 @@ File I/O
 'a' -> Append Mode
 """
 
-my_list = ["first line", "second line", "third line"]
+my_list = ["first line", "second line1", "third line"]
 
 my_file = open("firstfile.txt", "w")
 
