@@ -7,7 +7,7 @@ class FindByLinkText():
         driver.maximize_window()
         driver.get(baseUrl)
         elementByClassName = driver.find_element_by_class_name("inputs")
-        elementByClassName.send_keys("Tet")
+        elementByClassName.send_keys("Test")
 
         if elementByClassName is not None:
             print("We found an element by Class Name")
