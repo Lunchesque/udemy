@@ -1,0 +1,29 @@
+1519119604352	geckodriver	INFO	geckodriver 0.19.1
+1519119604355	geckodriver	INFO	Listening on 127.0.0.1:41059
+1519119605435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.b6ZuPUHo60q0"
+1519119606284	Marionette	INFO	Enabled via --marionette
+1519119607220	Marionette	INFO	Listening on port 46021
+1519119607248	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519119664080	geckodriver	INFO	geckodriver 0.19.1
+1519119664084	geckodriver	INFO	Listening on 127.0.0.1:48313
+1519119665198	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FngjXuMeyMIQ"
+1519119665558	Marionette	INFO	Enabled via --marionette
+1519119666354	Marionette	INFO	Listening on port 40685
+1519119666408	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 30414, Gecko_IOThread] WARNING: pipe error (96): Connection reset by peer: file /build/firefox-9j9NY8/firefox-58.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519119840133	geckodriver	INFO	geckodriver 0.19.1
+1519119840135	geckodriver	INFO	Listening on 127.0.0.1:59129
+1519119841252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zj6IAD51f1FV"
+1519119841653	Marionette	INFO	Enabled via --marionette
+1519119842504	Marionette	INFO	Listening on port 46251
+1519119842562	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.parastorage.com/services/third-party/jquery/2.0.3/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x520027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
