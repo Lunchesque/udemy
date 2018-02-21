@@ -9,4 +9,4 @@ class ClickAndSendKeys():
         driver.maximize_window()
         driver.get(baseUrl)
 
-        driver.find_element(By.)
+        driver.find_element(By.XPATH)
