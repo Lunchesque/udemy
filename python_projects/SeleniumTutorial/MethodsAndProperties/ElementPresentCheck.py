@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
 from MyCaseWithHandyWrappers import HandyWrappers
 
 class ElPresenceCheck():
