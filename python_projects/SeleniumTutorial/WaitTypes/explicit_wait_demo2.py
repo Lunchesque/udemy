@@ -1,6 +1,6 @@
 from selenium import webdriver
 from utilities.handy_wrappers import HandyWrappers
-from WaitTypes.explicit_wait_type import ExplicitWaitType
+from utilities.explicit_wait_type import ExplicitWaitType
 from selenium.webdriver.common.action_chains import ActionChains
 
 class ExplicitWaitDemo2():
