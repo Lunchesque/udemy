@@ -1,5 +1,5 @@
 from selenium import webdriver
-from MethodsAndProperties.handy_wrappers import HandyWrappers
+from utilities.handy_wrappers import HandyWrappers
 from selenium.webdriver.common.action_chains import ActionChains
 
 class ExplicitWaitDemo():
