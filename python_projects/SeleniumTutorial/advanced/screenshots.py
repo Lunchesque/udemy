@@ -19,7 +19,7 @@ class Screenshots():
         destinationFileName = "/home/sergey/Desktop/"
 
         try:
-            driver.save_screenshot()
+            driver.save_screenshot( )
 
         ActionChains(driver).pause(2).perform()
 
