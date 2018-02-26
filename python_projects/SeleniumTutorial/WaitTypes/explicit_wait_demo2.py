@@ -1,6 +1,7 @@
 from selenium import webdriver
-from WaitTypes.explicit_wait_type import ExplicitWaitType
 from utilities.handy_wrappers import HandyWrappers
+from WaitTypes.explicit_wait_type import ExplicitWaitType
+from selenium.webdriver.common.action_chains import ActionChains
 
 class ExplicitWaitDemo2():
 
@@ -25,6 +26,8 @@ class ExplicitWaitDemo2():
 
         element = wait.waitForElement("//input[@id='displayed-text']")
         element.click()
+
+        ActionChains(driver).pause(2).perform()
 
 ff = ExplicitWaitDemo2()
 ff.test()
