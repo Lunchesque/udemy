@@ -29,7 +29,7 @@ class HandyWrappers():
             locatorType = locatorType.lower()
             byType = self.getByType(locatorType)
             element = self.driver.find_element(byType, locator)
-            print("Element Found")
+            print("Element --" + locator + "-- Found")
         except:
             print("Element not found")
         return element
