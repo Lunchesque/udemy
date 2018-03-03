@@ -2,12 +2,11 @@ import pytest
 
 @pytest.fixture()
 def setUp():
-    print("Once before every method")
-
+    print("Running demo1 setUp")
 
 
 def test_methodA(setUp):
-    print("Running method A")
+    print("Running demo1 method A")
 
 def test_methodB(setUp):
-    print("Running method B")
+    print("Running demomethod B")
