@@ -1,7 +1,7 @@
 import pytest
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="class")
 def oneTimeSetUp(browser, osType):
 
     print("Running conftest demo oneTimeSetUp")
