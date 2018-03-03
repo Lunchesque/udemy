@@ -2,14 +2,20 @@ import pytest
 
 
 @pytest.fixture(scope="class")
-def oneTimeSetUp(browser, osType):
+def oneTimeSetUp(request, browser, osType):
 
     print("Running conftest demo oneTimeSetUp")
     if browser == "firefox":
+        value = 10
         print("Running test on FF")
     else:
+        value = 20
         print("Running test on Chrome")
-    yield
+
+    if request.cls is not None:
+        request.cls.value = value
+
+    yield value
     print("Running conftest demo oneTimeTearDown")
 
 @pytest.fixture()
