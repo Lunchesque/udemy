@@ -6,7 +6,7 @@ class ClickAndSendKeys():
 
     def test(self):
         baseUrl = "https://letskodeit.teachable.com"
-        driver = webdriver.Chrome()
+        driver = webdriver.Firefox()
         driver.maximize_window()
         driver.get(baseUrl)
         driver.implicitly_wait(5)
