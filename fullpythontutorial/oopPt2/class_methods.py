@@ -4,7 +4,7 @@ class User:
 
     @classmethod
     def display_active_users(cls):
-        return "There are currently {} active users".format(cls.active_users)
+        return "There are currently {} active user(s)".format(cls.active_users)
 
     @classmethod
     def from_string(cls, data_str):
@@ -36,15 +36,36 @@ class User:
     def birthday(self):
         return "{} is now {}. happy birthday!".format(self.first, self.age + 1)
 
-tom = User.from_string("Tom,Jones,89")
-print(tom.first)
-print(tom.full_name())
-print(tom.initials())
-print(tom.birthday())
 
-# user1 = User("Perry", "Cox", 67)
-# user2 = User("Joe", "Tribiani", 24)
-#
-# print(user1.display_active_users())
-# user1.logout()
-# print(User.display_active_users())
+class Moderator(User):
+    total_mods = 0
+    def __init__(self, first, last, age, community):
+        super().__init__(first, last, age)
+        self.community = community
+        Moderator.total_mods += 1
+
+    @classmethod
+    def display_active_mods(cls):
+        return "There are currently {} active mod(s)".format(cls.total_mods)
+
+    def remove_post(self):
+        return "{} removed a post from {} community".format(self.full_name(), self.community)
+
+
+u1 = User("Tom", "Garcia", 35)
+u2 = User("Cliff", "Edwards", 47)
+u3 = User("Jess", "Wachowski", 20)
+mod1 = Moderator("Jass", "O'conner", 61, "Piano")
+mod1 = Moderator("Jass", "O'conner", 61, "Piano")
+print(User.display_active_users())
+print(Moderator.display_active_mods())
+
+
+
+
+
+
+
+
+
+#dsdsd
