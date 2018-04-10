@@ -6,6 +6,16 @@
 
 
 def yell(string1):
+    """YELLING
+
+    >>> yell("hello")
+    'HELLO!'
+
+    >>> yell(111)
+    Traceback (most recent call last):
+        ...
+    AttributeError: 'int' object has no attribute 'upper'
+    """
     return string1.upper() + "!"
 
 print(yell("go away"))
