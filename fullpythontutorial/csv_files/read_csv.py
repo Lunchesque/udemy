@@ -11,7 +11,7 @@ with open("fighters.csv") as file:
     for fighter in csv_reader:
     	# Each row is a list
     	# Use index to access data
-    	print(f"{fighter[0]} is from {fighter[1]}")
+    	print("{} is from {}".format(fighter[0], fighter[2]))
 
 # Example where data is cast into a list
 from csv import reader
