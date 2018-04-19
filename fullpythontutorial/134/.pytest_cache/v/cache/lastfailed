@@ -1,0 +1,6 @@
+{
+  "test_add_location.py::test_add_location": true,
+  "test_locs.py::test_add_location": true,
+  "test_locs.py::test_delete_location": true,
+  "test_locs.py::test_loc": true
+}
