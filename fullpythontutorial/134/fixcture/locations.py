@@ -36,6 +36,26 @@ class Locations:
             data=payload
         )
 
+    def rename_location(self):
+        locations = self.get_locations()
+        loc_id = [location["id"] for location in self.get_locations() if "Auto_test_loc" in location["name"]]
+        _url = "{}/{}".format(self._url, str(loc_id[0]))
+        payload = {"name": "new",
+                    "latitude": self._latitude,
+                    "longitude": self._longitude,
+                    "cameras": [1,2,3],
+                    "localserver_id": 2,
+                    "id": loc_id}
+        res = requests.put(_url,
+                            headers={"Accept": "application/json"},
+                            verify=False,
+                            auth=self._auth,
+                            data=payload
+                            )
+        print(loc_id)
+        print(_url)
+        print(res)
+
     def delete_location(self):
         loc_id = [location["id"] for location in self.get_locations() if "Auto_test_loc" in location["name"]]
         _del_url = "{}/{}".format(self._url, str(loc_id[0]))
