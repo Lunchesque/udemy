@@ -29,6 +29,7 @@ class Locations:
                     "longitude": self._longitude,
                     "cameras": [],
                     "localserver_id": 2}
+
         res = requests.post(self._url,
             headers={"Accept": "application/json"},
             verify=False,
@@ -43,9 +44,10 @@ class Locations:
         payload = {"name": "new",
                     "latitude": self._latitude,
                     "longitude": self._longitude,
-                    "cameras": [1,2,3],
+                    "cameras": [],
                     "localserver_id": 2,
-                    "id": loc_id}
+                    "id": loc_id
+                    }
         res = requests.put(_url,
                             headers={"Accept": "application/json"},
                             verify=False,
