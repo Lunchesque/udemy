@@ -19,6 +19,8 @@ def location_data_generation():
         d = jsonpickle.encode(data)
         file.write(d)
 
+    print(data["pass"])
+
 def get_location_data():
     location_data_generation()
     with open("location_data.json") as file:
@@ -26,4 +28,4 @@ def get_location_data():
         d = jsonpickle.decode(content)
     return d
 
-print(get_location_data())
+location_data_generation()

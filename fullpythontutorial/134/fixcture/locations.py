@@ -42,8 +42,6 @@ class Locations:
         loc_id = [location["id"] for location in self.get_locations() if "Auto_test_loc" in location["name"]]
         _url = "{}/{}".format(self._url, str(loc_id[0]))
         payload = {"name": "new",
-                    "latitude": self._latitude,
-                    "longitude": self._longitude,
                     "cameras": [],
                     "localserver_id": 2,
                     "id": loc_id
