@@ -22,6 +22,7 @@ class Locations:
         locations = response.json()
         return locations
 
+
     def add_location():
         _url = "https://172.20.9.134/s7/locations"
         loc_id = ''.join(choice(digits) for i in range(5))
